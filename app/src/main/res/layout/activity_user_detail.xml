@@ -12,9 +12,9 @@
         android:layout_height="0dp"
         android:layout_marginStart="31dp"
         android:layout_marginTop="138dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="438dp"
         android:text="@string/id"
-        app:layout_constraintBottom_toTopOf="@+id/tv_name"
+        app:layout_constraintBottom_toTopOf="@+id/btn_delete"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,4 +55,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_score" />
 
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginBottom="123dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="61dp"
+        android:background="#CA1A1A"
+        android:text="delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id" />
 </androidx.constraintlayout.widget.ConstraintLayout>

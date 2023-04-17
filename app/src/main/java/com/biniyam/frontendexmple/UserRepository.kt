@@ -55,5 +55,17 @@ class UserRepository {
             return  response
         }
 
+        suspend fun updateUser(user: UserModel):Response<JsonObject>{
+            val userDao = retrofit.create(UserService::class.java)
+            val response = userDao.updateUser(user.id, user.name, user.score,user.isHuman)
+            return response
+        }
+
+        suspend fun  delteUser(id:Int):Response<JsonObject>{
+            val userDao = retrofit.create(UserService::class.java)
+            val response = userDao.deletUser(id)
+            return response
+        }
+
     }
 }

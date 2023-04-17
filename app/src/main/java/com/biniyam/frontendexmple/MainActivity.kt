@@ -9,12 +9,17 @@ import com.biniyam.frontendexmple.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+    override fun onResume() {
+        super.onResume()
+        showUsers()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
+        showUsers()
 
         binding.btnShow.setOnClickListener {
             showUsers()

@@ -47,7 +47,7 @@
         android:layout_marginTop="75dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
