@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">frontendExmple</string>
+    <string name="add_user">add user</string>
+    <string name="get_users">Get Users</string>
+    <string name="is_human">is human</string>
+    <string name="score">score</string>
+    <string name="name">name</string>
+    <string name="id">id</string>
+
+
+</resources>
